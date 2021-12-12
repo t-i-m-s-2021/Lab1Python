@@ -1,4 +1,7 @@
+
+
 def adder(*nums):
+# функция возвраащет сумму элементов
     return sum(nums)    
 
 
