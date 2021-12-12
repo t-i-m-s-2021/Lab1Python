@@ -1,4 +1,6 @@
 min_length = 6
+""" в результате успешного выполнения работы функция вернет True
+"""
 
 def Password_verification(password):
     if (len(password)< min_length):
