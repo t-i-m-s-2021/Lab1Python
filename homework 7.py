@@ -19,4 +19,4 @@ for elem in os.walk(os.getcwd()):
 a = np.random.randint(0, 10, (3, 3))
 print(a)
 print(a.transpose())
-
+print(get_random_sym_from_str("Hello!"))
