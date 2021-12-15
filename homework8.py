@@ -78,16 +78,7 @@ class Student(Human):
         super().__init__(weight, height, age, gender, name, surname)
         self.count_completed_homeworks = 0
 
-    def fib(self, n):
-        start = time.time()
-        logging.info("""Function "fib" has started""")
-        a = b = 1
-        for i in range(n):
-            if i == n - 2:
-                logging.info("""Function "fib" has finished""")
-                logging.info("Execution time " + str(time.time() - start))
-                return b
-            a, b = b, a + b
+ 
 
     def __eq__(self, other):
         return self.count_completed_homeworks == other.count_completed_homeworks
@@ -106,6 +97,17 @@ class Student(Human):
 
     def __ge__(self, other):
         return self.count_completed_homeworks >= other.count_completed_homeworks
+    
+    def fib(self, n):
+        start = time.time()
+        logging.info("""Function "fib" has started""")
+        a = b = 1
+        for i in range(n):
+            if i == n - 2:
+                logging.info("""Function "fib" has finished""")
+                logging.info("Execution time " + str(time.time() - start))
+                return b
+            a, b = b, a + b
 
 
 a = Student(1, 1, 1, 1, 1, 1)
